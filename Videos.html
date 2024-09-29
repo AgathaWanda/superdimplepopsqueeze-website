@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Description Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2841ad;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .video-section {
+            display: flex;
+            align-items: center;
+            background-color: #3659f8;
+            box-shadow: 0 4px 8px rgba(5, 5, 7, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        video {
+            width: 40%;
+            border-right: 2px solid #ddd;
+        }
+        .description {
+            padding: 20px;
+            width: 60%;
+            color: #0f0e0e;
+        }
+        h1 {
+            margin-top: 0;
+            color: #000000;
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .video-section {
+                flex-direction: column;
+            }
+            video, .description {
+                width: 100%;
+            }
+            video {
+                width: 640px;
+                height: 360px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Video 1 Section -->
+        <div class="video-section">
+            <video controls>
+                <source src="c:\Users\nathaniel\Downloads\MAPEH HEALTH MUSIC VIDEO.mp4" type="video/mp4">
+            </video>
+            <div class="description">
+                <h1>MAPEH 9 - Health VIDEO PT</h1>
+                <p align="left"> As a group, our MAPEH project uses the playful and catchy song "Titibo-Tibo" by Moira Dela Torre to create an engaging and memorable presentation about building a healthy community. With energetic rhythms and giving our collaborative efforts, our group highlights the importance of teamwork, care, and individual contributions to community well-being. Our group effectively inspires the audience to give importance of their healthy habits in a fun and positive way by combining a familiar song with a meaningful health message.
+
+                </p>
+            </div>
+        </div>
+
+        <!-- Video 2 Section -->
+        <div class="video-section">
+            <video controls style="width:50%; height:50%">
+                <source src="c:\Users\nathaniel\Downloads\BUWAN NG WIKA.mp4.mp4" width="50%" height="50%" type="video/mp4">
+            </video>
+            <div class="description">
+                <h1> The Celebration of Buwan ng Wika</h1>
+                <p align="left"> The celebration of Buwan ng Wika, or National Language Month, is a vibrant and joyful occasion that honors the richness of Filipino languages and culture. Our section, Faith, takes part in various activities showcasing traditional Filipino attire, music, dances, and speeches that highlight the beauty of our heritage. We enjoy this month by immersing ourselves in cultural performances and artistic presentations that deepen our appreciation of the Filipino identity. Through engaging contests, like spoken poetry and storytelling, we celebrate the diversity of languages spoken across the Philippines. This month fosters unity and pride, reminding us of the importance of preserving our linguistic and cultural heritage.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
